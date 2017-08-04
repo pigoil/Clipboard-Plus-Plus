@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     QMessageBox::warning(0,"hahaha","sadsad");
+    QMessageBox::aboutQt(0);
 }
 
 MainWindow::~MainWindow()

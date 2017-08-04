@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMouseEvent>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    bool pressing;
+    QPoint ref_point;
+protected:
+    void mouseMoveEvent(QMouseEvent* );
+    void mousePressEvent(QMouseEvent* );
+    void mouseReleaseEvent(QMouseEvent*);
 };
 
 #endif // MAINWINDOW_H

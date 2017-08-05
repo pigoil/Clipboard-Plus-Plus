@@ -24,8 +24,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    optionmenu.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    optionmenu.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    resource.qrc

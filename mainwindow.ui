@@ -11,45 +11,68 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>QDock</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(189, 189, 189, 200);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+      <property name="spacing">
+       <number>7</number>
+      </property>
       <item>
        <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Bookman Old Style</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(207, 207, 207);</string>
+        </property>
         <property name="text">
-         <string>QDock</string>
+         <string>Clipboard++</string>
+        </property>
+        <property name="margin">
+         <number>5</number>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+        </property>
         <property name="text">
-         <string>Options</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/icons/resource/option_arrow.png</normaloff>:/icons/resource/option_arrow.png</iconset>
         </property>
        </widget>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="listWidget"/>
+     <widget class="QListWidget" name="listWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>249</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

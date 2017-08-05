@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>resource/option_arrow.png</file>
+    </qresource>
+</RCC>
